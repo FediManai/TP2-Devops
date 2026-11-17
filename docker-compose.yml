@@ -1,1 +1,6 @@
-
+services:
+  web:
+    image: Fedi/monapp:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
